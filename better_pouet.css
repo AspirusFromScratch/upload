@@ -1,0 +1,145 @@
+/* Only change the hue of these colors */
+
+:root { 
+    --color0: hsl(220, 60%, 33%); /* Color of Title Background  */
+    --color1: hsl(220, 100%, 81%); /* Color of Links             */
+    --color2: hsl(220, 33%,  40%); /* Color of dark table items  */
+    --color3: hsl(220, 29%,  47%); /* Color of light table items */
+    --color4: hsl(220, 41%,  51%); /* Color of background image  */
+}
+
+body {
+    background-color: var(--color4);
+    background-image: url("https://i.ibb.co/XSDrJYj/background.jpg");
+    background-blend-mode: overlay;
+}
+
+nav, .pouettbl h2, .boxtable th, .letterselect, #pouetbox_groupmain .foot, #pouetbox_bbspost .foot, #pouetbox_partyheader > *, #pouetbox_usermain .contribheader, .navbar, #pouetbox_boardmain #boardname, #pouetbox_listsmain #listsname, .boxtable.pagedtable td.nav, .boxtable caption, #pouetbox_prodmain th, #pouetbox_onelinerview li.day {
+    background-color: var(--color0);
+}
+
+#pouetbox_latestoneliner h2 {
+    background: var(--color0) url("gfx/titles/talk.gif") top left no-repeat;
+}
+
+#pouetbox_search h2 {
+    background: var(--color0) url("gfx/titles/search.gif") top left no-repeat;
+}
+
+#pouetbox_stats th.header {
+    background: var(--color0) url("gfx/titles/stats.gif") top left no-repeat;
+}
+
+#pouetbox_cdc h2 {
+    background: var(--color0) url("gfx/titles/coupdecoeur.gif") top left no-repeat;
+}
+
+.pouetbox_newsbox h3 {
+    background: var(--color0) url("gfx/titles/bitfellas.gif") top left no-repeat;
+}
+
+#pouetbox_upcomingparties h2 {
+    background: var(--color0) url("gfx/titles/dpnet.gif") top left no-repeat;
+}
+
+#pouetbox_feedwanted h2 {
+    background: var(--color0) url("gfx/titles/wanted.png") top left no-repeat;
+}
+
+a, nav li a::first-letter, .navbar {
+    color: var(--color1);
+}
+
+.boxlist > :nth-child(2n+1), .boxtable tr:nth-child(2n+1) td, #partytable tr:nth-child(2n+1) td, td.r1, .pouettbl .content, #pouetbox_search .content.buttons, #pouetbox_faq dt, #pouetbox_prodmain td, #pouetbox_bbsview .threadcategory {
+    background: var(--color2);
+}
+
+.boxlist > :nth-child(2n), .boxtable tr:nth-child(2n) td, #partytable tr:nth-child(2n) td, .content.r2, td.r2, .foot, .boxtable td.foot, #pouetbox_search .content, #pouetbox_boardmain #body > div, #pouetbox_faq dd, #pouetbox_prodmain td.r2, #pouetbox_prodmain .foot {
+    background: var(--color3);
+}
+
+.nextpage {
+    background: var(--color0) url("gfx/fleched.png") top right no-repeat;
+}
+
+.boxtable tr.closed:nth-child(2n) td.topic {
+    background: url("gfx/lock.png") var(--color3) no-repeat 2px 2px;
+}
+
+.boxtable tr.closed:nth-child(2n+1) td.topic {
+    background: url("gfx/lock.png") var(--color2) no-repeat 2px 2px;
+}
+
+.prevpage {
+    background: var(--color0) url("gfx/flecheg.png") top left no-repeat;
+}
+
+.bbs_quote blockquote, .bbs_code code {
+    background-color: rgba(0,0,0,0.1);
+    border-color: rgba(0,0,0,0.2);
+}
+
+/* Custom CSS to style various things, These can be removed if wanted. */
+
+
+/* Better Input Box */
+input {
+    border: none;
+    padding: 5px;
+}
+
+/* Better Selection Dialogs */
+select {
+    border: none;
+    padding: 5px;
+}
+
+/* Smaller BBS Images with Rounded Corners */
+.bbimage {
+    width: 50%;
+    border-radius: 15px;
+    padding: 10px;
+}
+
+/* Better blockquotes */
+.bbs_quote blockquote, .bbs_code code {
+    background-color: rgba(0,0,0,0.1);
+    border: none;
+    border-radius: 5px;
+}
+
+.bbs_quote b {display: none;}
+
+/* Better Avatars */
+img.avatar {
+    width: 32px;
+    height: 32px;
+    border-radius: 50%;
+}
+
+#pouetbox_latestbbs .avatar {
+    width: 32px;
+}
+
+/* Better Oneliners */
+#pouetbox_latestoneliner li {
+    padding: 10px;
+}
+
+/* Better Download Links */
+#links li {
+    display: block;
+    margin: 5px;
+    padding: 2px;
+}
+
+/* Better Bars */
+.innerbar, .innerbar_solo {
+    background: none;
+    background-color: var(--color4);
+    border-radius: 15px;
+}
+.outerbar, .outerbar_solo {
+    border-radius: 15px;
+    padding: 0px;
+}
